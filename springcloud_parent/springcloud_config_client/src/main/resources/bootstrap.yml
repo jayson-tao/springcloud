@@ -1,0 +1,10 @@
+spring:
+  cloud:
+    config:
+      name: config_client #需要从github上读取的资源名称，注意没有yml后缀名
+      profile: dev   #本次访问的配置项
+      #profile: test   #本次访问的配置项
+      label: master
+      uri: http://127.0.0.1:9600  #本微服务启动后先去找9600号服务，通过SpringCloudConfig获取GitHub的服务地址
+
+

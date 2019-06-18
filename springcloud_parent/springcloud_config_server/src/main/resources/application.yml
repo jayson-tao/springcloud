@@ -1,0 +1,13 @@
+server:
+  port: 9600
+#配置git地址
+spring:
+  application:
+    name:  microservicecloud_config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jayson-tao/springcloudconfig.git #GitHub上面的git仓库名字
+
+
